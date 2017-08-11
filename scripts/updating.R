@@ -1,11 +1,15 @@
 # Script for updating R
-# Purpose: To prevent one from losing record of installed R packages
+# Inspiration: http://www.datascienceriot.com//r/upgrade-R-packages/ 
 
-# Background: 
+# PURPOSE:
+# To prevent one from losing record of installed R packages
+
+# BACKGROUND: 
 # After a some time using R, people end up having a significant number of R
 # packages installed. During R installations, it is not uncommon for the user
 # to find that they have to install everything all over. This can be a pain 
 # for those that have hundreds, or even thousands of packages installed. 
+
 
         ##########  Special Notices!  #############
         ##                                       ##
@@ -22,7 +26,6 @@ dir.create(newdir)
 setwd(newdir)
 
 # STEP 2: Load the 'installr' package
-## create function to either attach or install some required packages
 if (!require(installr)) {
         install.packages(installr)
 }
