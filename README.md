@@ -14,7 +14,7 @@ This repository contains materials used for in-house training conducted for the 
   * [Vector exercise](https://github.com/NESREA/WMGtraining/blob/master/scripts/create-vector.R)
   * [Matrix creation](https://github.com/NESREA/WMGtraining/blob/master/scripts/create-matrix.R)
   * [List creation](https://github.com/NESREA/WMGtraining/blob/master/scripts/create-list.R)
-
+  * [Updating R](https://github.com/BroVic/WMGtraining/blob/master/scripts/updating.R)
 <!--
 ```person(given = "Victor", family = "Ordu", email = "victor.ordu@nesrea.gov.ng", role = c("aut", "cre"))```
 -->
