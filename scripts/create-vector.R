@@ -41,10 +41,14 @@ length(prac)
 prac[9]
 prac[8]
 
+prac <- append(prac, 7.89224)               # append() adds elements to vectors
+length(prac)
+prac[10]
+
 str(prac)
 is.numeric(prac)
-is.integer(prac)
-is.double(prac)
+is.integer(prac)                            # integer = numeric, not vice versa
+is.double(prac)                             # double & numeric are syonymous
 
 # Bonus functions: Are there NAs (i.e. missing values) in the result?
 anyNA(prac)
@@ -63,7 +67,7 @@ length(prac_short1)
 
 # Another method
 prac
-prac_short2 <- prac[-c(8:9)]
+prac_short2 <- prac[-c(8:10)]
 prac_short2
 length(prac_short2)
 
@@ -71,10 +75,11 @@ length(prac_short2)
 identical(prac_short1, prac_short2)
 
 # Finally, a small brain teaser...
-prac[9] <- NA
+prac[c(9,10)] <- NA
 prac
 length(prac)
 identical(prac, prac_short1) 
-# How would you solve this tricky condition? Push your solution and create pull
-# request.
+# How would you solve this tricky condition i.e. make these 2 objects (vectors)
+# to be exactly the same? Push your solution to your forked repository and
+# create pull request.
 ## END.
